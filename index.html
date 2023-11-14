@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/svg">
+    <link rel="stylesheet" href="style.css">
+    <title>Travel Agency</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Fulfill your dream of <span>World Tour</span></h1>
+        <div class="icons">
+            <i class="fa-solid fa-car"></i>
+            <i class="fa-solid fa-train"></i>
+            <i class="fa-solid fa-ship"></i>
+            <i class="fa-solid fa-plane"></i>
+        </div>
+        <div class="main__container">
+            <div class="container card__01">
+                <div class="content">
+                    <h2>Cappadocia</h2>
+                    <span>Turkey <i class="fa-solid fa-location-dot"></i></span>
+                    <p>
+                        Crest made i shore or the of one us by.
+                        Flitting and take chamber maiden pallas
+                        in of these i. Stopped thou and by i
+                        quoth nevermore, there i a maiden.
+                    </p>
+                    <a href="#" class="btn">Book Tour</a>
+                </div>
+            </div>
+            <div class="container card__02">
+                <div class="content">
+                    <h2>Bicol</h2>
+                    <span>Philippines <i class="fa-solid fa-location-dot"></i></span>
+                    <p>
+                        Crest made i shore or the of one us by.
+                        Flitting and take chamber maiden pallas
+                        in of these i. Stopped thou and by i
+                        quoth nevermore, there i a maiden.
+                    </p>
+                    <a href="#" class="btn">Book Tour</a>
+                </div>
+            </div>
+            <div class="container card__03">
+                <div class="content">
+                    <h2>Osaka</h2>
+                    <span>Japan <i class="fa-solid fa-location-dot"></i></span>
+                    <p>
+                        Crest made i shore or the of one us by.
+                        Flitting and take chamber maiden pallas
+                        in of these i. Stopped thou and by i
+                        quoth nevermore, there i a maiden.
+                    </p>
+                    <a href="#" class="btn">Book Tour</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero__section">
+            <div class="container__fluid">
+                <div class="tab">
+                    <button class="tab__links" onclick="openCity(event, 'Flight')" id="defaultOpen">
+                        <i class="fa-solid fa-plane-up"></i>&nbsp; Flight
+                    </button>
+                    <button class="tab__links" onclick="openCity(event, 'Hotel')">
+                        <i class="fa-solid fa-bed"></i>&nbsp; Hotel
+                    </button>
+                    <button class="tab__links" onclick="openCity(event, 'Rental')">
+                        <i class="fa-solid fa-car"></i>&nbsp; Rental
+                    </button>
+                </div>
+                <div id="Flight" class="tab__content flow__content">
+                    <h3 class="tab__title">Travel the world with us</h3>
+                    <div class="input__group">
+                        <div>
+                            <label for="from">From</label><br>
+                            <input type="text" id="from" placeholder="Departing from">
+                        </div>
+                        <div>
+                            <label for="to">To</label><br>
+                            <input type="text" id="to" placeholder="Arriving at">
+                        </div>
+                    </div>
+                    <a href="#" class="btn hero__btn">Search and Find Dates</a>
+                </div>
+                <div id="Hotel" class="tab__content flow__content">
+                    <h3 class="tab__title">Find the best hotels</h3>
+                    <p class="tab__desc">
+                        Book a hotel with us and get the best fares and promotions.
+                    </p>
+                    <p class="tab__desc tab__desc--1">We know hotels - we know comfort.</p>
+                    <a href="#" class="btn hero__btn">Search Hotels</a>
+                </div>
+                <div id="Rental" class="tab__content flow__content">
+                    <h3 class="tab__title">Best car rental in the world!</h3>
+                    <p class="tab__desc">
+                        <span class="badge">DISCOUNT!</span>
+                        Special offer if you book today: 25% off anywhere in the world
+                    </p>
+                    <input type="text" placeholder="Pick-up Point"><br>
+                    <a href="#" class="btn hero__btn">Search Availability</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container__fluid">
+                <h2 class="subtitle">Good Offers Right Now</h2>
+                <p class="sub__desc">Up to 50% Discount</p>
+                <div class="service__row">
+                    <div class="service__col--1">
+                        <img src="img/cinqueterre.jpg" alt="Cinque Terre">
+                        <div class="overlay">Cinque Terre</div>
+                    </div>
+                    <div class="service__col--2">
+                        <div class="img__container">
+                            <img src="img/pisa.jpg" alt="Pisa">
+                            <div class="overlay">Pisa</div>
+                        </div>
+                        <div class="img__container">
+                            <img src="img/istanbul.jpg" alt="Istanbul">
+                            <div class="overlay">Istanbul</div>
+                        </div>
+                        <div class="img__container">
+                            <img src="img/sanfran.jpg" alt="San Francisco">
+                            <div class="overlay">San Francisco</div>
+                        </div>
+                        <div class="img__container">
+                            <img src="img/paris.jpg" alt="Paris">
+                            <div class="overlay">Paris</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container__fluid">
+                <h2 class="subtitle res__center">Explore Nature</h2>
+                <p class="sub__desc res__center">Travel with us and see nature at its finest</p>
+
+                <div class="travel__row">
+                    <div class="travel__col">
+                        <img src="img/mountain.jpg" alt="Mountain">
+                        <div class="travel__content">
+                            <h3 class="travel__title">Sachseln, Switzerland</h3>
+                            <p class="travel__price">Package $1200</p>
+                            <p class="travel__desc">Book Now & Get 40% Discount</p>
+                            <a href="#" class="btn travel__btn">Buy Tickets</a>
+                        </div>
+                    </div>
+                    <div class="travel__col">
+                        <img src="img/coast.jpg" alt="Coast">
+                        <div class="travel__content">
+                            <h3 class="travel__title">Bali, Indonesia</h3>
+                            <p class="travel__price">Package $1200</p>
+                            <p class="travel__desc">Book Now & Get 40% Discount</p>
+                            <a href="#" class="btn travel__btn">Buy Tickets</a>
+                        </div>
+                    </div>
+                    <div class="travel__col">
+                        <img src="img/architecture.jpg" alt="Architecture">
+                        <div class="travel__content">
+                            <h3 class="travel__title">Belfast, UK</h3>
+                            <p class="travel__price">Package $1200</p>
+                            <p class="travel__desc">Book Now & Get 40% Discount</p>
+                            <a href="#" class="btn travel__btn">Buy Tickets</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container__fluid">
+                <div class="newsletter">
+                    <div>
+                        <img src="img/newsletter.png" alt="Newsletter">
+                    </div>
+                    <h2 class="subtitle new__subtitle">Get The Best Offers First!</h2>
+                    <p class="sub__desc sub__desc--mt">Join Our Newsletter</p>
+                    <input type="text" class="new__input" placeholder="Enter Email Address">
+                    <a href="#" class="btn newsletter__btn">Subscribe</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container__fluid">
+                <h2 class="subtitle">Contact</h2>
+                <p class="sub__desc contact__sub">Let us book your next trip!</p>
+                <div class="contact__row">
+                    <div class="contact__col flow__content">
+                        <p class="contact__desc">
+                            <i class="fa-solid fa-globe"></i>&nbsp; Ankara, East
+                        </p>
+                        <p class="contact__desc">
+                            <i class="fa-solid fa-phone"></i>&nbsp; +00 151515
+                        </p>
+                        <p class="contact__desc">
+                            <i class="fa-solid fa-envelope"></i>&nbsp; travel@gmail.com
+                        </p>
+                    </div>
+                    <div class="contact__col">
+                        <input type="text" class="contact__input" placeholder="Name">
+                        <input type="text" class="contact__input" placeholder="Email">
+                        <input type="text" class="contact__input" placeholder="Message">
+                        <a href="#" class="btn contact__btn">Send Message</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container__fluid">
+            <div class="footer__row">
+                <h2 class="subtitle footer__title">Keep Follow Us</h2>
+                <div class="icon__group">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
